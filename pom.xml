@@ -11,8 +11,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>api-exercicios-1-2</module>
         <module>api-folha-pagamento</module>
+        <module>api-folha-pagamento-client</module>
     </modules>
 
     <properties>

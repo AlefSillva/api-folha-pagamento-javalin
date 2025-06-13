@@ -1,15 +1,20 @@
 package br.edu.assessment.domain;
 
-public class Mensalista {
-    private int id;
-    private String nome;
+public class Mensalista extends Funcionario {
+    private double salario;
 
-    public Mensalista() {
-        // Construtor Default para o jackson
+    public Mensalista() {}
+
+    public Mensalista(long matricula, String nome, String cargo, double salario) {
+        super(matricula, nome, cargo);
+        this.salario = salario;
     }
 
-    public Mensalista(int id, String nome) {
-        this.id = id;
-        this.nome = nome;
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 }
